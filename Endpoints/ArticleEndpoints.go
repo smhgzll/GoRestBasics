@@ -1,7 +1,7 @@
 package Endpoints
 
 import (
-	"GoBasics/Services"
+	"GoRestBasics/Services"
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
@@ -9,7 +9,7 @@ import (
 	"strconv"
 )
 
-func returnAllArticles(w http.ResponseWriter, r *http.Request){
+func returnAllArticles(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: returnAllArticles")
 	var articles = Services.GetArticles()
 	json.NewEncoder(w).Encode(articles)

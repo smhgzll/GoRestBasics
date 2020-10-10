@@ -1,7 +1,7 @@
 package Services
 
 import (
-	"GoBasics/Models"
+	"GoRestBasics/Models"
 	"github.com/ahmetb/go-linq"
 )
 
@@ -10,11 +10,11 @@ var articles = []Models.Article{
 	{Id: 2, Title: "Hello 2", Desc: "Article Description", Content: "Article Content"},
 }
 
-func GetArticles() []Models.Article{
+func GetArticles() []Models.Article {
 	return articles
 }
 
-func GetArticle(id int) Models.Article{
+func GetArticle(id int) Models.Article {
 	var filteredArticles []Models.Article
 	var result Models.Article
 

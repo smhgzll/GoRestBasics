@@ -1,7 +1,7 @@
 package main
 
 import (
-	"GoBasics/Endpoints"
+	"GoRestBasics/Endpoints"
 	"fmt"
 )
 
